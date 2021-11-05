@@ -1,0 +1,397 @@
+* {
+    box-sizing: border-box;
+    margin    : 0px;
+    padding   : 0px;
+}
+
+/* Navigation */
+
+header {
+    /* border          : 2px solid green; */
+    display            : block;
+    width              : 100%;
+    position           : fixed;
+    top                : 1px;
+    padding            : 11px;
+    background-color   : white;
+    box-shadow         : 0px 1px 9px 1px rgb(119, 116, 116);
+    z-index            : 2;
+    /* margin-bottom   : 10px; */
+}
+
+.left a {
+    text-decoration: none;
+    display        : inline-block;
+    color          : black;
+    font-size      : 25px;
+    padding        : 2px 10px;
+    letter-spacing : 3px;
+    /* border      : 1px solid red; */
+}
+
+.left a:hover {
+    background-color: rgb(182, 179, 179);
+}
+
+.left a>span {
+    font-weight: bold;
+}
+
+.right {
+    /* border: 1px solid red; */
+    display : inline-block;
+    width   : auto;
+    position: absolute;
+    top     : 10px;
+    right   : 10px;
+}
+
+.navbar li {
+    display  : inline-block;
+    margin   : 4px 22px;
+    font-size: 22px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding        : 5px;
+    margin         : auto 5px;
+    color          : black;
+    letter-spacing : 3px;
+}
+
+.navbar li a:hover {
+    text-decoration : none;
+    background-color: rgb(182, 179, 179);
+}
+
+
+/* ************************ */
+
+/* Front Background */
+
+.main {
+    display        : flex;
+    position       : relative;
+    top            : 0px;
+    justify-content: center;
+    text-align     : center;
+    /* border         : 1px solid green; */
+}
+
+.main img {
+    filter : grayscale(10%);
+    opacity: 0.8;
+    width  : 97%;
+}
+
+.mid {
+    display : inline-block;
+    position: absolute;
+    top     : 40%;
+}
+
+.mid span {
+    color           : white;
+    font-size       : 55px;
+    letter-spacing  : 4px;
+    background-color: rgba(75, 70, 70, 0.651);
+    padding         : 8px;
+}
+
+.mid b {
+    background-color: rgba(34, 32, 32, 0.651);
+    font-weight     : bold;
+    letter-spacing  : 4px;
+    padding         : 5px;
+}
+
+/* ************************** */
+
+/* Projects Section */
+
+#sec-1 div>h2 {
+    font-family     : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position        : absolute;
+    color           : white;
+    background-color: black;
+    display         : inline-block;
+    padding         : 10px;
+    font-size       : 20px;
+    font-weight     : lighter;
+    z-index         : 1;
+}
+
+/* *************************** */
+
+/* About Section*/
+
+#sec-2 p {
+    margin-bottom : 30px;
+    text-align    : justify;
+    font-size     : 17px;
+    padding       : 2px;
+    letter-spacing: 0.5px;
+}
+
+#sec-2 div>h2 {
+    margin-top    : 10px;
+    margin-bottom : 15px;
+    letter-spacing: 0.5px;
+}
+
+#sec-2 div>h3 {
+    margin-bottom: 15px;
+    font-size    : 17px;
+    font-weight  : lighter;
+    color        : rgb(70, 66, 66);
+}
+
+#sec-2 div>p {
+    font-weight  : 550;
+    /* text-align: justify; */
+}
+
+.btn {
+    display         : block;
+    width           : 100%;
+    background-color: rgb(199, 196, 196);
+    border          : none;
+    cursor          : pointer;
+    padding         : 10px;
+    text-align      : center;
+    font-size       : 17px;
+    /* font-weight  : 600; */
+}
+
+.btn:hover {
+    background-color: rgb(160, 160, 160);
+}
+
+/* *************************** */
+
+/* Contacts Section */
+
+#sec-3 p {
+    font-size  : 20px;
+    font-weight: 500;
+
+}
+
+form {
+    display       : flex;
+    flex-direction: column;
+}
+
+form input {
+    margin   : 20px 0px;
+    padding  : 10px;
+    font-size: 17px;
+    border   : 1.6px solid rgb(177, 173, 173);
+}
+
+.inptbtn {
+    display         : block;
+    width           : 200px;
+    color           : white;
+    background-color: black;
+    border          : none;
+    cursor          : pointer;
+    border-radius   : 20px;
+}
+
+.inptbtn:hover {
+    background-color: rgb(158, 158, 158);
+    color           : black;
+
+}
+
+/* *************************** */
+
+/* Footer */
+footer {
+    /* border: 2px solid green; */
+    background-color: rgba(243, 243, 243, 0.623);
+    color           : rgb(105, 103, 103);
+    font-size       : 20px;
+    text-align      : center;
+    margin-top      : 100px;
+    padding         : 50px;
+    opacity         : 0.7;
+}
+
+/* *************************** */
+
+/* Utility Classes */
+.sec {
+    display        : block;
+    width          : 95vw;
+    margin-left    : auto;
+    margin-right   : auto;
+    /* border      : 2px solid gray; */
+    padding-top    : 85px;
+}
+
+.sec::after {
+    content: "";
+    clear  : both;
+    display: inherit;
+}
+
+.sec>h2 {
+    margin-bottom: 20px;
+}
+
+.sec>hr {
+    width        : 100%;
+    margin-bottom: 45px;
+}
+
+.item {
+    margin   : 5px;
+    padding  : 5px;
+    /* height: 300px; */
+}
+
+.item img {
+    height      : 100%;
+    margin-left : auto;
+    margin-right: auto;
+    width       : 100%;
+    filter      : grayscale(60%);
+}
+
+/* *************************** */
+
+/* Responsive Design */
+.row {
+    width: 100%;
+}
+
+/* For Extra large Devices  */
+@media(min-width: 1200px) {
+    .col-lg-3 {
+        float    : left;
+        width    : 25%;
+        /* border: 1px solid red; */
+    }
+}
+
+/* For large Devices  */
+@media(min-width: 992px) and (max-width: 1200px) {
+    .col-lg-3 {
+        float    : left;
+        width    : 25%;
+        /* border: 1px solid red; */
+    }
+}
+
+/* For Medium Devices */
+@media(min-width: 768px) and (max-width: 991.98px) {
+
+    .col-md-2 {
+        float    : left;
+        width    : 50%;
+        /* border: 1px solid red; */
+    }
+}
+
+/* Small Devices */
+@media(min-width: 576px) and (max-width: 767.98px) {
+
+    /* Navigation */
+    .left a {
+        font-size     : 23px;
+        letter-spacing: 1px;
+    }
+
+    .navbar li {
+        margin   : 4px 2px;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        letter-spacing: 2px;
+    }
+
+    /* ******************** */
+
+    /* Front Background */
+
+    .mid span {
+        font-size     : 40px;
+        letter-spacing: 3px;
+        padding       : 3px;
+    }
+
+    .mid b {
+        letter-spacing: 2px;
+        padding       : 1px;
+    }
+}
+
+/* Extra Small Devices */
+@media(max-width: 575.98px) {
+    /* Navigation */
+
+    header {
+        /* border          : 2px solid green; */
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        text-align     : center;
+    }
+
+    .right {
+        display: none;
+    }
+
+    /* ********************** */
+
+    /* Front Background */
+
+    .main {
+        top: 50px;
+    }
+
+    .mid {
+        top: 30px;
+    }
+
+    .mid span {
+        position: relative;
+        display         : flex;
+        flex-direction  : column;
+        font-size       : 30px;
+        letter-spacing  : 3px;
+        padding         : 4px;
+        background-color: rgba(75, 70, 70, 0.295);
+    }
+
+    .mid b {
+        display       : block;
+        width         : 50%;
+        margin-left   : auto;
+        margin-right  : auto;
+        letter-spacing: 4px;
+        padding       : 5px;
+    }
+
+    /* *********************** */
+}
+
+
+/* // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
